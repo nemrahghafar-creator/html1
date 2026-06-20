@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICP CMS Login</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+  }
+
+
+  header {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header img {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+  }
+  .btn-contact {
+    background: #1e6f5c;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-contact:hover {
+    background: #0a3d62;
+  }
+  .menu {
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu span {
+    height: 3px;
+    background: #555;
+    border-radius: 2px;
+  }
+
+  /* Login form */
+  .container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  .login-box {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  .login-box h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #0a3d62;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    color: #333;
+  }
+  input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+  }
+  input:focus {
+    border-color: #1e6f5c;
+    box-shadow: 0 0 0 3px rgba(30,111,92,0.15);
+  }
+
+  .btn-login {
+    width: 100%;
+    background: #1e6f5c;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-login:hover {
+    background: #0a3d62;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .links a {
+    color: #1e6f5c;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .links a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+   
+   
+  </a>
+  <button class="btn-contact"  align="center">Contact Us</button>
+
+  </div>
+</header>
+
+<div class="container">
+  <div class="login-box">
+    <h2>CMS Portal Login</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn-login">Log in</button>
+
+
+      </div>
+    </form>
+  </div>
+</div>

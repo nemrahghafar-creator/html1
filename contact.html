@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Islamia College Peshawar</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+
+  /* Header + Nav - no logo */
+  header {
+    background: linear-gradient(90deg, #0a3d62, #1e6f5c);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+  }
+  header h1 { font-size: 32px; letter-spacing: 1px; }
+
+  nav {
+    background: #1e6f5c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  nav a:hover, nav a.active {
+    background: #0a3d62;
+  }
+
+  /* Contact section - horizontal, no block */
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .intro h2 {
+    font-size: 30px;
+    color: #0a3d62;
+    margin-bottom: 8px;
+  }
+  .intro p {
+    color: #555;
+    font-size: 16px;
+  }
+
+  /* Horizontal layout */
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  /* Info section */
+  .info-section {
+    flex: 1 1 320px;
+    position: relative;
+  }
+  .info-section h3 {
+    color: #0a3d62;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info-item {
+    margin-bottom: 18px;
+  }
+  .info-item strong {
+    color: #1e6f5c;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .info-item p {
+    color: #555;
+    font-size: 15px;
+  }
+
+  /* Vertical line between info and form */
+  .info-section::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 5%;
+    height: 90%;
+    width: 1px;
+    background: #d0d0d0;
+  }
+
+  /* Form section - no box */
+  .form-section {
+    flex: 1 1 400px;
+  }
+  .form-section h3 {
+    color: #0a3d62;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .form-section p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    background: transparent;
+    transition: 0.2s;
+    font-family: inherit;
+  }
+  input:focus, textarea:focus {
+    border-color: #1e6f5c;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+  .btn-submit {
+    background: #1e6f5c;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 8px;
+  }
+  .btn-submit:hover {
+    background: #0a3d62;
+  }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    .contact-row { flex-direction: column; gap: 40px; }
+    .info-section::after { display: none; }
+    .info-section { border-bottom: 1px solid #e0e0e0; padding-bottom: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Islamia College Peshawar</h1>
+</header>
+
+<nav>
+
+  <a href="about.html">About Us</a>
+  <a href="ad.html">Admissions</a>
+  <a href="program.html">Programs</a>
+  
+  <a href="contact.html" class="active">Contact Us</a>
+</nav>
+
+<div class="container">
+  <div class="intro">
+    <h2>Contact Us</h2>
+    <p>For inquiries regarding admissions, programs, or general information.</p>
+  </div>
+
+  <div class="contact-row">
+    
+    
+    <div class="info-section">
+      <h3>Contact Information</h3>
+      
+      <div class="info-item">
+        <strong>Address</strong>
+        <p>University Road, Peshawar<br>Khyber Pakhtunkhwa, Pakistan</p>
+      </div>
+
+      <div class="info-item">
+        <strong>Phone</strong>
+        <p>091-5201281<br>091-9217718</p>
+      </div>
+
+      <div class="info-item">
+        <strong>Email</strong>
+        <p>info@icp.edu.pk<br>admissions@icp.edu.pk</p>
+      </div>
+    </div>
+
+    <!-- Form - Right side -->
+    <div class="form-section">
+      <h3>Feel free to ask</h3>
+      <p>Submit your query and we will respond promptly.</p>
+      
+      <form>
+        <div class="form-group">
+          <label>Name *</label>
+          <input type="text" placeholder="Full name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone No. *</label>
+          <input type="tel" placeholder="03XX-XXXXXXX" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" placeholder="email@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Problem / Message *</label>
+          <textarea placeholder="Describe your query..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

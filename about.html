@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Islamia College Peshawar</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+
+  /* Header - no logo now */
+  header {
+    background: linear-gradient(90deg, #0a3d62, #1e6f5c);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+  }
+  header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  /* Navigation */
+  nav {
+    background: #1e6f5c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  nav a:hover, nav a.active {
+    background: #0a3d62;
+  }
+
+  /* Home content */
+  .container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  .hero p {
+    margin-top: 18px;
+    font-size: 17px;
+    color: #444;
+  }
+
+  /* Est. line with divider */
+  .stats-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #0a3d62;
+    font-weight: 600;
+  }
+  .divider {
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+  }
+
+  @media (max-width: 650px) {
+    nav a { padding: 12px 16px; font-size: 14px; }
+    header h1 { font-size: 24px; }
+    .stats-line { flex-direction: column; gap: 8px; }
+    .divider { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Islamia College Peshawar</h1>
+</header>
+
+<nav>
+  <a href="about.html" class="active">Home</a>
+
+  <a href="ad.html">Admissions</a>
+  <a href="program.html">Programs</a>
+  <a href="cms.html">Events</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+  <div class="hero">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAaEzuU0jFiYJ_X4opcVxKjqJ5-bNRkU04IWb3LedDQ&s=10" alt="Islamia College Peshawar Campus">
+    <p>Islamia College Peshawar - where heritage meets modern education. A landmark of learning in Khyber Pakhtunkhwa.</p>
+  </div>
+
+
+  <div class="stats-line">
+    <span>Established: 1913</span>
+    <div class="divider"></div>
+    <span>112+ Years of Excellence</span>
+  </div>
+</div>
+
+</body>
+</html>

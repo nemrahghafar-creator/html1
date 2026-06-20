@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Programs - Islamia College Peshawar</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+
+  /* Header + Nav */
+  header {
+    background: linear-gradient(90deg, #0a3d62, #1e6f5c);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+  }
+  header h1 { font-size: 32px; letter-spacing: 1px; }
+
+  nav {
+    background: #1e6f5c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  nav a:hover, nav a.active {
+    background: #0a3d62;
+  }
+
+  /* Programs section - horizontal */
+  .container {
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 30px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .intro h2 {
+    font-size: 30px;
+    color: #0a3d62;
+    margin-bottom: 10px;
+  }
+  .intro p {
+    color: #555;
+    font-size: 16px;
+  }
+
+  /* Horizontal flex layout */
+  .program-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .program-item {
+    flex: 1 1 300px;
+    padding: 25px 20px;
+    position: relative;
+  }
+
+  /* Vertical line between programs */
+  .program-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background: #d0d0d0;
+  }
+
+  .program-item h3 {
+    color: #0a3d62;
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  .program-item .duration {
+    color: #1e6f5c;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .program-item p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* On mobile stack vertically */
+  @media (max-width: 900px) {
+    .program-item {
+      flex: 1 1 100%;
+    }
+    .program-item:not(:last-child)::after {
+      display: none;
+    }
+    .program-item:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Islamia College Peshawar</h1>
+</header>
+
+<nav>
+
+  <a href="about.html">About Us</a>
+  <a href="ad.html">Admissions</a>
+  <a href="program.html" class="active">Programs</a>
+<a href="cms.html">CMS</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+  <div class="intro">
+    <h2>Academic Programs</h2>
+    <p>Islamia College Peshawar offers undergraduate and graduate programs across multiple disciplines.</p>
+  </div>
+
+  <div class="program-row">
+    
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Computer Science</h3>
+      <p>Programming, data structures, databases, and software development with research focus.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Software Engineering</h3>
+      <p>Software design, development methodologies, quality assurance, and project management.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Artificial Intelligence</h3>
+      <p>Machine learning, neural networks, NLP, and intelligent systems for computational problems.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Chemistry</h3>
+      <p>Organic, inorganic, physical, and analytical chemistry with laboratory research.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Mathematics</h3>
+      <p>Pure and applied mathematics, calculus, algebra, statistics, and mathematical modeling.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Physics</h3>
+      <p>Mechanics, thermodynamics, electromagnetism, quantum physics, and experimental techniques.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BBA 4 Years</span>
+      <h3>Business Administration</h3>
+      <p>Finance, marketing, HR management, and strategic planning for managerial roles.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Political Science</h3>
+      <p>Political systems, international relations, public policy, and governance studies.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Sociology</h3>
+      <p>Social structures, cultural dynamics, social change, and research methods.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">LLB 5 Years</span>
+      <h3>Law</h3>
+      <p>Constitutional law, criminal law, civil procedure, and jurisprudence for legal practice.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BA/MA</span>
+      <h3>English Literature</h3>
+      <p>Classical and modern literature, linguistics, literary theory, and critical analysis.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BA/MA</span>
+      <h3>Urdu</h3>
+      <p>Urdu language, literature, poetry, prose, and literary criticism.</p>
+    </div>
+
+    <div class="program-item">
+      <span class="duration">BS 4 Years</span>
+      <h3>Geography</h3>
+      <p>Physical and human geography, cartography, GIS, and environmental studies.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

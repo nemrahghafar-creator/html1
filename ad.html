@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIOU Admission Form - Sample</title>
+<style>
+ font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+  }
+ .form-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+ .header {
+    background: #1e4d8b;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+ .header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+ .header small { font-size: 13px; opacity: 0.9; }
+ .section {
+    padding: 20px;
+  }
+ .section h3 {
+    color: #1e4d8b;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+    font-size: 16px;
+  }
+ .row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+ .field {
+    flex: 1 1 300px;
+  }
+  label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  label.req { color: red; }
+  input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  input[readonly] {
+    background: #f0f0f0;
+    color: #555;
+  }
+ .note 
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px; 
+
+    <nav>
+
+  <a href="about.html">About Us</a>
+  <a href="ad.html">Admissions</a>
+  <a href="program.html">Programs</a>
+  
+  <a href="contact.html" class="active">Contact Us</a>
+</nav>
+
+</style>
+</head>
+<body>
+<br>
+<br>
+<div class="form-box">
+  <div class="header">
+    <div></div>
+    <div>
+      <h2>Islamia College, Peshawar </h2>
+      <small>Online Admission Forms</small>
+    </div>
+  </div>
+  <header>
+  <a href="index.html">
+   
+   
+  </a>
+  <button class="btn-contact"  align="center">Contact Us</button>
+
+  </div>
+</header>
+
+  <div class="section">
+    <h3>Personal Information</h3>
+    <div class="row">
+      <div class="field">
+        <label>Registration no. </label>
+        <input type="text" >
+      </div>
+      <div class="field">
+        <label>Student Name <span class="req">**</span></label>
+        <input type="text"  >
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Father Name <span class="req">**</span></label>
+        <input type="text" >
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+         <label>Province <span class="req">**</span></label>
+        <select>
+          <option>Select Province</option>
+          <option selected> Peshawar </option>
+          <option> Swat </option>
+          <option> Lahore </option>
+        </select>
+      </div>
+      <div class="field">
+        <label>District <span class="req">**</span></label>
+        <input type="text"  >
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Tehsil <span class="req">**</span></label>
+        <input type="text"  >
+      </div>
+      <div class="field">
+ 
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Contact & Program</h3>
+    <div class="row">
+      <div class="field">
+        <label>Mobile Phone No. <span class="req">**</span></label>
+        <input type="tel" placeholder="03*********" >
+
+      </div>
+      <div class="field">
+        <label>E-mail <span class="req">**</span></label>
+        <input type="email" placeholder="yourname@gmail.com" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Program</label>
+        <input type="text" >
+      </div>
+      <div class="field">
+        <label>Specialization</label>
+        <input type="text" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Subject Specialization <span class="req">**</span></label>
+        <select>
+          <option>Choose Subject Specialization</option>
+          <option selected>Elementary Teacher Education</option>
+          <option>Secondary Teacher Education</option>
+          <option>Science</option>
+          <option>English</option>
+        </select>
+      </div>
+    </div>
+    <p class="note"> Thanks for sumbittion </p>
+  </div>
+</div>
+
+</body>
+</html>
